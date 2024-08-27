@@ -13,23 +13,22 @@ import Forms from "@/components/Forms";
 
 export default function Home() {
 
-
   return (
     <div className="bg-white w-full">
       <div className="min-h-[100vh] bg-black relative">
-        <div className="absolute inset-0 bg-[url('/banner.jpg')] bg-cover opacity-10 h-full" />
+        <div className="absolute inset-0 bg-[url('/banner.jpg')] bg-cover lg:bg-center opacity-10 h-full" />
         <Nav />
-        <div className="relative z-10 p-4 flex flex-col justify-center gap-2 px-72 h-screen">
-          <h1 className="text-cinza-claro text-6xl font-bold ">
+        <div className="relative z-10 p-4 flex flex-col justify-center gap-2 px-5 lg:px-60 h-screen">
+          <h1 className="text-cinza-claro lg:text-6xl text-4xl font-bold ">
             Bem-vindo à{" "}
             <span className="text-azul-claro">COOUT Engenharia</span>
           </h1>
-          <h2 className="text-verde-claro text-3xl">
+          <h2 className="text-verde-claro lg:text-3xl text-xl">
             Sua Parceira em Segurança e Saúde no Trabalho
           </h2>
           <div className="mt-16">
             <button
-              className="bg-azul-claro hover:bg-blue-500 w-fit px-20 py-5 text-3xl text-white rounded-2xl font-bold"
+              className="bg-azul-claro hover:bg-blue-500 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
@@ -39,9 +38,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div id="quemsomos" className="flex px-72 py-32 gap-10 h-full">
-        <div className="w-1/2 ">
-          <h3 className="text-6xl  pb-8 font-bold text-azul-claro">
+      <div id="quemsomos" className="flex flex-col px-10 lg:px-60 lg:py-32 py-20 gap-10 h-full">
+        <div >
+          <h3 className="lg:text-6xl text-4xl  pb-8 font-bold text-azul-claro">
             QUEM SOMOS
           </h3>
           <div className="flex flex-col  justify-center items-center self-center">
@@ -58,8 +57,8 @@ export default function Home() {
             </p>
           </div>
         </div>
-        <div className="w-1/2">
-          <h3 className="text-6xl  pb-8 font-bold text-azul-claro uppercase">
+        <div>
+          <h3 className="lg:text-6xl text-4xl  pb-8 font-bold text-azul-claro uppercase">
             Nossa História
           </h3>
           <div className="flex flex-col  justify-center items-center self-center">
@@ -73,7 +72,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 px-72 gap-4 py-32 bg-azul-claro ">
+      <div className="grid grid-cols-1 px-10 lg:px-60 gap-20 lg:py-32 py-20 bg-azul-claro justify-center">
         {dadosDaEmpresa.map((item) => (
           <Card
             id={item.id}
@@ -83,17 +82,17 @@ export default function Home() {
           />
         ))}
       </div>
-      <div className="relative z-10 h-full py-32 bg-black">
+      <div className="relative z-10 h-full lg:py-32 py-20 bg-black">
         <div className="absolute inset-0 z-20 bg-[url('/colaborador.jpg')] bg-cover bg-center opacity-65" />
-        <div className="relative z-20 flex flex-col gap-10 bg-black opacity-75 p-10 mx-72 rounded-2xl">
-          <h3 className="text-6xl font-bold uppercase text-verde-claro">
+        <div className="relative z-20 flex flex-col gap-10 bg-black opacity-75 p-10 mx-10 lg:mx-72 rounded-2xl">
+          <h3 className="lg:text-6xl text-2xl font-bold uppercase text-verde-claro">
             Porque escolher a COOUT Engenharia:
           </h3>
-          <div className="text-white text-3xl">
+          <div className="text-white lg:text-3xl text-xl">
             Com um conceito inovador de Melhoria Contínua baseado em quatro
             pilares fundamentais:
           </div>
-          <ul className="text-white text-2xl flex flex-col gap-4">
+          <ul className="text-white lg:text-2xl text-xl flex flex-col gap-4">
             <li className="list-disc ml-10 text-verde-claro font-bold">
               Engenharia de Segurança do Trabalho
             </li>
@@ -107,7 +106,7 @@ export default function Home() {
               Treinamentos
             </li>
           </ul>
-          <div className="text-white text-2xl">
+          <div className="text-white lg:text-2xl text-xl">
             Estamos preparados para oferecer soluções abrangentes e eficientes.
             Sob a liderança do Engº Dioni Couto de Oliveira, a COOUT Engenharia
             é reconhecida nacionalmente pela sua excelência e dedicação. Estamos
@@ -118,9 +117,9 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-32 px-72" id="nossosservicos">
-        <h3 className="text-6xl font-bold text-azul-claro">NOSSOS SERVIÇOS</h3>
-        <div className="pt-16 grid grid-cols-4 gap-10">
+      <div className="lg:py-32 py-20 px-10 lg:px-60" id="nossosservicos">
+        <h3 className="lg:text-6xl text-4xl font-bold text-azul-claro">NOSSOS SERVIÇOS</h3>
+        <div className="pt-16 flex gap-10 lg:flex-row flex-wrap">
           {dadosServicos.map((item) => (
             <CardServices
               key={item.id}
@@ -132,31 +131,33 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <div className="px-72 flex" id="falaconosco">
-        <div className="w-1/2 bg-[url('/notebook.webp')] bg-cover bg-center" />
-        <div className="w-1/2 bg-azul-claro px-28 py-32 flex flex-col gap-5">
+      <div className="px-10 lg:px-60 flex lg:py-32 py-20 lg:flex-row flex-col" id="falarconosco" style={{
+          boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",        
+        }}>
+        <div className="lg:w-1/2 lg:h-auto h-36 bg-[url('/man-safety.jpg')] bg-cover bg-center backdrop-contrast-50 backdrop-brightness-50" />
+        <div className="lg:w-1/2 bg-azul-claro px-10 py-10 flex flex-col gap-5">
           <h3 className="text-2xl font-bold text-blue-500">ENTRE EM CONTATO</h3>
-          <h4 className="text-5xl font-bold text-white">
+          <h4 className="lg:text-5xl text-3xl font-bold text-white">
             FALE COM UM ESPECIALISTA
           </h4>
           <Forms />
         </div>
       </div>
-      <footer className="bg-cinza-claro py-14 px-72 grid grid-cols-4 gap-5">
-        <div className="flex flex-col gap-4">
+      <footer className="bg-cinza-claro py-14 lg:px-40 px-10 grid lg:grid-cols-4 grid-cols-1 lg:gap-5 gap-10">
+        <div className="flex flex-col gap-4 items-center">
           <div className="flex justify-center items-center w-fit rounded-full p-1 bg-white">
-            <Image src="/logo.png" width={100} height={100} alt="logotipo" />
+            <Image src="/logo.png" width={80} height={80} alt="logotipo" />
           </div>
-          <div>
+          <div className="flex flex-col items-center">
             <p className="uppercase text-2xl font-bold text-azul-claro">
               COOUT Engenharia
             </p>
             <span className="uppercase text-base font-bold">
-              laudos, consultoria e treinamentos LTDA.
+            LAUDOS, CONSULTORIA E TREINAMENTOS
             </span>
           </div>
         </div>
-        <div className="flex flex-col gap-2 font-bold">
+        <div className="flex flex-col lg:gap-2 font-bold lg:pl-20">
           <p className="text-2xl font-bold text-azul-claro">Navegação</p>
           <div className="flex flex-col gap-2">
             <a href="/" className="text-base hover:text-azul-claro">
@@ -165,10 +166,10 @@ export default function Home() {
             <a href="#quemsomos" className="text-base hover:text-azul-claro">
               Quem Somos
             </a>
-            <a href="/" className="text-base hover:text-azul-claro">
+            <a href="/#nossosservicos" className="text-base hover:text-azul-claro">
               Serviços
             </a>
-            <a href="/" className="text-base hover:text-azul-claro">
+            <a href="/#falarconosco" className="text-base hover:text-azul-claro">
               Contato
             </a>
           </div>
@@ -196,8 +197,8 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col gap-2">
-          <p className="text-2xl font-bold text-azul-claro">Redes Sociais</p>
-          <div className="flex gap-3">
+          <p className="text-2xl font-bold text-azul-claro lg:text-left text-center">Redes Sociais</p>
+          <div className="flex gap-3 lg:self-start self-center">
             <a href="">
               <FaFacebookSquare color="#3b5998" size={30} />
             </a>

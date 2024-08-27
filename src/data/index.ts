@@ -21,14 +21,14 @@ export const dadosServicos = [
     id: 1,
     title: "SEGURANÇA DO TRABALHO E MEIO AMBIENTE",
     text: "Garantimos a conformidade com a legislação vigente para criar um ambiente de trabalho seguro e saudável através da Prevenção de Acidentes e Doenças Ocupacionais.",
-    image: "/quemsomos.webp",
+    image: "/worksafety.jpg",
     page: "/segurancadotrabalho",
   },
   {
     id: 2,
     title: "TREINAMENTO EM SST",
     text: "Realizamos Treinamentos Dinâmicos e Atualizados para assesugurar o a aplicação da legislação além do preparo fiscalizações, auditorias e situações de risco.",
-    image: "/quemsomos.webp",
+    image: "/treinamentosst.jpg",
     page: "/treinamentos",
   },
 ];

@@ -13,7 +13,7 @@ export default function Card({
 }) {
   return (
       <div
-        className="flex flex-col bg-white p-8 rounded-2xl h-full hover:drop-shadow-lg"
+        className="flex flex-col bg-white p-8 rounded-2xl h-full hover:drop-shadow-lg  drop-shadow-lg  "
         style={{
           boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",        
         }}
@@ -25,7 +25,7 @@ export default function Card({
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
         >
-          <h3 className="text-4xl text-center py-2 font-bold text-azul-claro flex gap-2 items-center ">
+          <h3 className="lg:text-4xl text-3xl text-center py-2 font-bold text-azul-claro flex gap-2 items-center ">
             {id === 1 ? (
               <GiArcheryTarget size={50} />
             ) : id === 2 ? (

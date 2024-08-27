@@ -19,14 +19,14 @@ export default function CardAccordion({
   return (
     <div>
       <div
-        className={`flex items-center justify-between cursor-pointer bg-azul-claro ${activeAccordion ? "rounded-tr-2xl rounded-tl-2xl" : "rounded-2xl"} `}
+        className={`flex items-center justify-between cursor-pointer bg-azul-claro rounded-t-2xl `}
         onClick={() => toggleAccordion(id)}
       >
         <div className="flex items-center justify-center">
-          <div className={`bg-cinza-medio-texto-sec h-16 w-44 font-bold px-10 flex justify-center items-center text-3xl ${activeAccordion ? "rounded-t-2xl" : "rounded-l-2xl"} `}>
+          <div className={`bg-cinza-medio-texto-sec h-24 lg:h-16 min-w-24 lg:w-44 font-bold lg:px-10 flex justify-center items-center lg:text-3xl text-xl rounded-tl-2xl `}>
             {sigla}
           </div>
-          <div className="text-2xl font-semibold p-4">
+          <div className="lg:text-2xl font-semibold lg:p-4 px-4">
             {question}
           </div>
         </div>
@@ -39,12 +39,12 @@ export default function CardAccordion({
         </div>
       </div>
       {activeAccordion === id && (
-        <div className="lg:text-lg text-[15px] p-2 flex bg-cinza-claro">
-          <div className="min-w-[250px] max-w-[250px]">
+        <div className="lg:text-lg text-[15px] p-2 flex lg:flex-row  flex-col bg-cinza-claro">
+          <div className="lg:min-w-[250px] lg:max-w-[250px]">
             <Image
               src="/quemsomos.webp"
               alt="quemsomos"
-              width={250}
+              width={550}
               height={250}
             />
           </div>
