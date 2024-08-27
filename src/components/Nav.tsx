@@ -98,6 +98,30 @@ export default function Nav() {
             </li>
             <li>
               <a
+                href="/laudo-nr12"
+                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
+              >
+                NR12
+              </a>
+            </li>
+            <li>
+              <a
+                href="/laudo-nr13"
+                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
+              >
+                NR13
+              </a>
+            </li>
+            <li>
+              <a
+                href="/#falarconosco"
+                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
+              >
+                Fale Conosco
+              </a>
+            </li>
+            <li>
+              <a
                 href="/#quemsomos"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
               >

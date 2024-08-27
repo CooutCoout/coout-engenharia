@@ -1,3 +1,5 @@
+import { text } from "stream/consumers";
+
 export const dadosDaEmpresa = [
   {
     id: 1,
@@ -240,3 +242,41 @@ export const treinamentoAccordion = [
     sigla: "--",
   },
 ];
+
+export const dataNr13 = [
+  {
+    id: 1,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  },
+  {
+    id: 2,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  },
+  {
+    id: 3,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  }
+
+]
+
+export const dataNr12 = [
+  {
+    id: 1,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  },
+  {
+    id: 2,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  },
+  {
+    id: 3,
+    title: "Inspeção Abrangente",
+    text: "Nossa equipe especializada realiza inspeções completas, tanto internas quanto externas, para garantir que seu equipamento cumpra integralmente os requisitos da NR13",
+  }
+
+]

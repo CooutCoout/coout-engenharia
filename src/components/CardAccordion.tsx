@@ -8,6 +8,7 @@ export default function CardAccordion({
   question,
   answer,
   sigla,
+  image,
 }: {
   id: number;
   activeAccordion: number | null;
@@ -15,6 +16,7 @@ export default function CardAccordion({
   question: string;
   answer: string;
   sigla: string;
+  image?: string;
 }) {
   return (
     <div>
@@ -40,14 +42,14 @@ export default function CardAccordion({
       </div>
       {activeAccordion === id && (
         <div className="lg:text-lg text-[15px] p-2 flex lg:flex-row  flex-col bg-cinza-claro">
-          <div className="lg:min-w-[250px] lg:max-w-[250px]">
+          { image && <div className="lg:min-w-[250px] lg:max-w-[250px]">
             <Image
-              src="/quemsomos.webp"
+              src={image}
               alt="quemsomos"
               width={550}
               height={250}
             />
-          </div>
+          </div>}
           <p className="p-4">
           {answer}
 
