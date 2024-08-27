@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 import CardAccordion from "@/components/CardAccordion";
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { seguranDoTrabalhoAccordion } from "@/data";
 import { useState } from "react";
@@ -46,7 +47,7 @@ export default function page() {
           />
         ))}
       </div>
-      {/* <AccordionComponent /> */}
+      <Footer />
     </div>
   );
 }

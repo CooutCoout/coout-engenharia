@@ -2,6 +2,7 @@
 
 "use client";
 import CardAccordion from "@/components/CardAccordion";
+import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import { treinamentoAccordion } from "@/data";
 import { useState } from "react";
@@ -74,6 +75,7 @@ export default function page() {
           />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

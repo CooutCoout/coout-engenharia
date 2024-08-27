@@ -16,6 +16,7 @@ export default function Forms() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm<Inputs>();
 
@@ -24,14 +25,15 @@ export default function Forms() {
       e.preventDefault();
       emailjs
         .sendForm(
-          "service_o1dndxs",
-          "template_xtz56rn",
+          "service_n7xxtw4",
+          "template_x99a6x7",
           e.target,
-          "vG1JqsHz5RVY8CJJM"
+          "_OpErG886JSc6Ft7w"
         )
         .then(
           (result: any) => {
             console.log(result.text);
+            reset()
             alert("Email enviado com sucesso!");
           },
           (error) => {
