@@ -3,6 +3,7 @@
 import React from 'react'
 import { useForm, SubmitHandler } from "react-hook-form";
 import emailjs from "emailjs-com";
+import { toast } from "react-toastify";
 
 type Inputs = {
   from_name: string;
@@ -32,13 +33,12 @@ export default function Forms() {
         )
         .then(
           (result: any) => {
-            console.log(result.text);
+            
             reset()
-            alert("Email enviado com sucesso!");
+            toast.success("Email enviado com sucesso!");
           },
           (error) => {
-            console.log(error.text);
-            alert("Ocorreu um erro ao enviar o email.");
+            toast.error("Ocorreu um erro ao enviar o email.");
           }
         );
     }

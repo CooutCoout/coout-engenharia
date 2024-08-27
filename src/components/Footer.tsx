@@ -1,8 +1,15 @@
 import React from "react";
-import { FaFacebookSquare, FaLinkedin, FaPhoneAlt, FaWhatsappSquare } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaPhoneAlt,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { IoIosMail } from "react-icons/io";
 import Image from "next/image";
+import { IoLogoWhatsapp } from "react-icons/io";
+import { FaWhatsapp } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -25,6 +32,12 @@ export default function Footer() {
         <div className="flex flex-col gap-2">
           <a href="/" className="text-base hover:text-azul-claro">
             Home
+          </a>
+          <a href="/laudo-nr12" className="text-base hover:text-azul-claro">
+            NR-12
+          </a>
+          <a href="/laudo-nr12" className="text-base hover:text-azul-claro">
+            NR-13
           </a>
           <a href="#quemsomos" className="text-base hover:text-azul-claro">
             Quem Somos
@@ -78,6 +91,19 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      <a
+        href="#top"
+        className="z-50 fixed lg:bottom-10 bottom-5 lg:right-10 right-5"
+      >
+        <FaWhatsapp
+          color="#fff"
+          className="bg-green-600 p-2 rounded-full hover:scale-105 ease-in-out"
+          style={{
+            boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
+          }}
+          size={50}
+        />
+      </a>
     </footer>
   );
 }

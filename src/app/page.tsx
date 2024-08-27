@@ -2,15 +2,10 @@ import Card from "@/components/Card";
 import CardServices from "@/components/CardServices";
 import Nav from "@/components/Nav";
 import { dadosDaEmpresa, dadosServicos } from "@/data";
-import { FaFacebookSquare, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
-import { FaLocationDot } from "react-icons/fa6";
-import { FaPhoneAlt } from "react-icons/fa";
-
-
-import Image from "next/image";
+import { ToastContainer } from 'react-toastify';
 import Forms from "@/components/Forms";
 import Footer from "@/components/Footer";
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Home() {
 
@@ -145,6 +140,7 @@ export default function Home() {
         </div>
       </div>
       <Footer />
+      <ToastContainer />
     </div>
   );
 }
