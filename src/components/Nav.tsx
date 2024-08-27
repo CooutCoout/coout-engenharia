@@ -114,14 +114,6 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="/#falarconosco"
-                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
-              >
-                Fale Conosco
-              </a>
-            </li>
-            <li>
-              <a
                 href="/#quemsomos"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
               >

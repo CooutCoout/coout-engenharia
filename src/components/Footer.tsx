@@ -1,6 +1,7 @@
 import React from "react";
 import {
   FaFacebookSquare,
+  FaInstagramSquare,
   FaLinkedin,
   FaPhoneAlt,
   FaWhatsappSquare,
@@ -80,19 +81,23 @@ export default function Footer() {
           Redes Sociais
         </p>
         <div className="flex gap-3 lg:self-start self-center">
-          <a href="">
+          <a  target="_blank" href="https://www.facebook.com/profile.php?id=100003314685225">
             <FaFacebookSquare color="#3b5998" size={30} />
           </a>
-          <a href="">
+          <a target="_blank" href="http://www.linkedin.com/in/engenheiro-dioni-couto">
             <FaLinkedin color="#0e76a8" size={30} />
           </a>
-          <a href="">
+          <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511989057216">
             <FaWhatsappSquare color="#25d366" size={30} />
+          </a>
+          <a target="_blank" href="https://www.instagram.com/coout_engenharia?igsh=cmF4MHZyaXA0YXE2">
+            <FaInstagramSquare color="#3f729b" size={30} />
           </a>
         </div>
       </div>
       <a
-        href="#top"
+        target="_blank"
+        href="https://api.whatsapp.com/send/?phone=5511989057216"
         className="z-50 fixed lg:bottom-10 bottom-5 lg:right-10 right-5"
       >
         <FaWhatsapp
