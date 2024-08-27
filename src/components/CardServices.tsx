@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
-export default function CardServices({ title, text, image }: { title: string, text: string, image: string }) {
+export default function CardServices({ title, text, image, page }: { title: string, text: string, image: string, page: string }) {
   return (
     <div
       className="bg-white p-4 rounded-2xl shadow-md min-w-[300px] drop-shadow-lg max-w-[300px] flex flex-col items-center gap-4 hover:scale-105 ease-in-out justify-between "
@@ -23,7 +24,7 @@ export default function CardServices({ title, text, image }: { title: string, te
       <p className="text-cinza-medio-texto-sec text-center">
         {text}
       </p>
-      <button className="justify-self-end bg-cinza-claro hover:bg-cinza-escuro font-bold px-10 py-2 rounded-2xl hover:scale-105 ease-in-out hover:text-white">Saiba mais</button>
+      <Link href={page} className="justify-self-end bg-cinza-claro hover:bg-cinza-escuro font-bold px-10 py-2 rounded-2xl hover:scale-105 ease-in-out hover:text-white">Saiba mais</Link>
     </div>
   );
 }

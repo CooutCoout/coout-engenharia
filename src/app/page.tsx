@@ -2,9 +2,18 @@ import Card from "@/components/Card";
 import CardServices from "@/components/CardServices";
 import Nav from "@/components/Nav";
 import { dadosDaEmpresa, dadosServicos } from "@/data";
+import { FaFacebookSquare, FaLinkedin, FaWhatsappSquare } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+
+
 import Image from "next/image";
+import Forms from "@/components/Forms";
 
 export default function Home() {
+
+
   return (
     <div className="bg-white w-full">
       <div className="min-h-[100vh] bg-black relative">
@@ -109,7 +118,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="py-32 px-72">
+      <div className="py-32 px-72" id="nossosservicos">
         <h3 className="text-6xl font-bold text-azul-claro">NOSSOS SERVIÇOS</h3>
         <div className="pt-16 grid grid-cols-4 gap-10">
           {dadosServicos.map((item) => (
@@ -118,83 +127,87 @@ export default function Home() {
               title={item.title}
               text={item.text}
               image={item.image}
+              page={item.page}
             />
           ))}
         </div>
       </div>
-      <div className="px-72 flex">
-        <div className="w-1/2 bg-[url('/notebook.webp')] bg-cover bg-center"></div>
+      <div className="px-72 flex" id="falaconosco">
+        <div className="w-1/2 bg-[url('/notebook.webp')] bg-cover bg-center" />
         <div className="w-1/2 bg-azul-claro px-28 py-32 flex flex-col gap-5">
           <h3 className="text-2xl font-bold text-blue-500">ENTRE EM CONTATO</h3>
           <h4 className="text-5xl font-bold text-white">
             FALE COM UM ESPECIALISTA
           </h4>
-          <div className="flex flex-col gap-5">
-            <input
-              type="text"
-              id="default-input"
-              placeholder="Nome"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-            />
-            <input
-              type="text"
-              id="default-input"
-              placeholder="Nome"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-            />
-            <input
-              type="text"
-              id="default-input"
-              placeholder="Nome"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-            />
-            <textarea
-              id="default-input"
-              placeholder="Nome"
-              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
-            />
-            <button
-              className="bg-verde-claro hover:bg-green-600 w-fit px-20 py-3 text-white rounded-2xl font-bold"
-              style={{
-                boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
-              }}
-            >
-              Enviar
-            </button>
-          </div>
+          <Forms />
         </div>
       </div>
-      <footer className="bg-cinza-claro py-20 px-72 grid grid-cols-4 gap-5">
+      <footer className="bg-cinza-claro py-14 px-72 grid grid-cols-4 gap-5">
         <div className="flex flex-col gap-4">
           <div className="flex justify-center items-center w-fit rounded-full p-1 bg-white">
             <Image src="/logo.png" width={100} height={100} alt="logotipo" />
           </div>
           <div>
-            <p className="uppercase text-2xl font-bold text-azul-claro">COOUT Engenharia</p>
+            <p className="uppercase text-2xl font-bold text-azul-claro">
+              COOUT Engenharia
+            </p>
             <span className="uppercase text-base font-bold">
               laudos, consultoria e treinamentos LTDA.
             </span>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 font-bold">
           <p className="text-2xl font-bold text-azul-claro">Navegação</p>
-          <ul className="flex flex-col gap-2">
-            <li className="text-base">Home</li>
-            <li className="text-base">Quem Somos</li>
-            <li className="text-base">Serviços</li>
-            <li className="text-base">Contato</li>
-          </ul>
+          <div className="flex flex-col gap-2">
+            <a href="/" className="text-base hover:text-azul-claro">
+              Home
+            </a>
+            <a href="#quemsomos" className="text-base hover:text-azul-claro">
+              Quem Somos
+            </a>
+            <a href="/" className="text-base hover:text-azul-claro">
+              Serviços
+            </a>
+            <a href="/" className="text-base hover:text-azul-claro">
+              Contato
+            </a>
+          </div>
+        </div>
+        <div className="flex flex-col gap-2 font-semibold">
+          <p className="text-2xl font-bold text-azul-claro">Contato</p>
+          <p className="text-base flex gap-2 items-center">
+            <span>
+              <IoIosMail color="#38b6ff" size={20} />
+            </span>
+            dioni.couto@yahoo.com.br
+          </p>
+          <p className="text-base flex gap-2 items-center">
+            <span>
+              <FaPhoneAlt color="#38b6ff" size={18} />
+            </span>
+            11 - 9999-5555
+          </p>
+          <p className="text-base flex gap-2 items-center">
+            <span>
+              <FaLocationDot color="#38b6ff" size={20} />
+            </span>
+            Rua Doutor Almenor Jardim Silveira Jardim Alvorada, Santo André/SP
+            CEP: 09180-070
+          </p>
         </div>
         <div className="flex flex-col gap-2">
           <p className="text-2xl font-bold text-azul-claro">Redes Sociais</p>
-          <p className="text-base">11 - 55555-5555</p>
-          <p className="text-base">dioni.couto@yahoo.com.br</p>
-        </div>
-        <div className="flex flex-col gap-2">
-          <p className="text-2xl font-bold text-azul-claro">Contato</p>
-          <p className="text-base">11 - 55555-5555</p>
-          <p className="text-base">dioni.couto@yahoo.com.br</p>
-          <p className="text-base">Rua Doutor Almenor Jardim Silveira Jardim Alvorada, Santo André/SP CEP: 09180-070</p>
+          <div className="flex gap-3">
+            <a href="">
+              <FaFacebookSquare color="#3b5998" size={30} />
+            </a>
+            <a href="">
+              <FaLinkedin color="#0e76a8" size={30} />
+            </a>
+            <a href="">
+              <FaWhatsappSquare color="#25d366" size={30} />
+            </a>
+          </div>
         </div>
       </footer>
     </div>

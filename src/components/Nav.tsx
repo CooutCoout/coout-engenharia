@@ -1,28 +1,37 @@
 "use client"
 import React, { useEffect, useState } from "react";
+import { usePathname } from 'next/navigation'
 import Image from "next/image";
 
 export default function Nav() {
   
   const [scroll, setScroll] = useState(false);
+  const [checkPath, setCheckPath] = useState(false);
+  const pathname = usePathname()
 
   useEffect(() => {
+
+    if (pathname !== "/") {
+      setCheckPath(true);
+    }
+
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setScroll(true);
       } else {
         setScroll(false);
       }
+      
     };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   return (
     <nav
     className={`fixed z-50 w-full px-72 transition-all duration-300 ${
-      scroll ? "bg-white shadow-md" : "bg-transparent"
+      scroll || checkPath ? "bg-white shadow-md" : "bg-transparent"
     } h-fit`}
       style={{
         boxShadow:  `${scroll ? "rgba(0, 0, 0, 0.16) 0px 1px 4px" : "" } `,
@@ -35,11 +44,11 @@ export default function Nav() {
             <p className={` self-center ${scroll ? "text-xl" : "text-3xl"}  font-semibold text-azul-claro transition-all duration-300`}>
               Coout Engenharia
             </p>
-            <span className={`${scroll ? "hidden" : ""} italic text-cinza-claro`}>Consultoria, laudos e treinamentos.</span>
+            <span className={`${scroll ? "hidden" : ""} italic ${checkPath ? "text-cinza-escuro" : "text-cinza-claro" }`}>Consultoria, laudos e treinamentos.</span>
           </div>
         </div>
         <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-          <ul className={`${scroll ? "text-cinza-escuro" : "text-cinza-claro"} text-xl flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0`}>
+          <ul className={`${scroll || checkPath ? "text-cinza-escuro" : "text-cinza-claro"} text-xl flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0`}>
             <li>
               <a
                 href="/"
@@ -51,7 +60,7 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="#quemsomos"
+                href="/#quemsomos"
                 className="block py-2 px-3  md:hover:text-azul-claro md:p-0"
               >
                 Quem Somos
@@ -59,7 +68,7 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="#"
+                href="/#nossosservicos"
                 className="block py-2 px-3  md:hover:text-azul-claro md:p-0"
               >
                 Serviços
@@ -67,7 +76,7 @@ export default function Nav() {
             </li>
             <li>
               <a
-                href="#"
+                href="/#falaconosco"
                 className="block py-2 px-3  md:hover:text-azul-claro md:p-0"
               >
                 Fale Conosco
