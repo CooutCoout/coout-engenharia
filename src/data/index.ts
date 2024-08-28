@@ -28,11 +28,26 @@ export const dadosServicos = [
   },
   {
     id: 2,
-    title: "TREINAMENTO EM SST",
+    title: "TREINAMENTOS EM SST",
     text: "Realizamos Treinamentos Dinâmicos e Atualizados para assesugurar o a aplicação da legislação além do preparo fiscalizações, auditorias e situações de risco.",
     image: "/treinamentosst.jpg",
     page: "/treinamentos",
   },
+  {
+    id: 3,
+    title: "NR 13 - CALDEIRAS E VASOS DE PRESSÃO",
+    text: "Atendemos as exigências da NR 13, garantindo a segurança e a integridade dos equipamentos, além de promover a eficiência e a produtividade.",
+    image: "/nr13.jpg",
+    page: "/laudo-nr13",
+  },
+  {
+    id: 4,
+    title: "NR 12 - MÁQUINAS E EQUIPAMENTOS",
+    text: "Realizamos a adequação de máquinas e equipamentos às normas da NR 12, garantindo a segurança dos colaboradores e a conformidade com a legislação.",
+    image: "/nr12.jpg",
+    page: "/laudo-nr12",
+  }
+
 ];
 
 export const seguranDoTrabalhoAccordion = [

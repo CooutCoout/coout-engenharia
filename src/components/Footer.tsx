@@ -23,7 +23,7 @@ export default function Footer() {
           <p className="uppercase text-2xl font-bold text-azul-claro">
             COOUT Engenharia
           </p>
-          <span className="uppercase text-base font-bold">
+          <span className="uppercase text-base font-bold whitespace-nowrap">
             LAUDOS, CONSULTORIA E TREINAMENTOS
           </span>
         </div>
@@ -66,7 +66,7 @@ export default function Footer() {
           <span>
             <FaPhoneAlt color="#38b6ff" size={18} />
           </span>
-          11 - 9999-5555
+          (11) - 98905-7216
         </p>
         <p className="text-base flex gap-2 items-center">
           <span>

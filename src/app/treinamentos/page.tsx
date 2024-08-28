@@ -27,14 +27,15 @@ export default function page() {
             Conte com nossas soluções integradas em SST
           </h3>
         </div>
-        <button
+        <a
+          href="/#falarconosco"
           className="bg-blue-500 hover:bg-blue-600 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
           style={{
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
         >
           Fale com nossa Equipe
-        </button>
+        </a>
       </div>
       <div className="px-5 lg:px-60 flex flex-col gap-5 lg:mb-40 mb-20 lg:py-32 py-20">
         <div className="flex flex-col gap-10 pb-8">
@@ -43,12 +44,12 @@ export default function page() {
           </h2>
           <div className="flex w-full">
             <div
-              className="lg:text-2xl w-2/6 font-bold bg-cinza-medio-texto-sec text-white p-5 flex items-center justify-between rounded-l-2xl"
+              className="lg:text-2xl w-2/6 font-bold bg-cinza-medio-texto-sec text-white p-5 flex flex-col justify-center rounded-l-2xl"
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
             >
-              Confira nossos Cursos In Company
+              Confira nossos Cursos <span className="whitespace-nowrap">In Company</span>
             </div>
             <div
               className="lg:text-xl text-sm w-4/6 bg-cinza-claro p-4 rounded-r-2xl"

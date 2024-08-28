@@ -33,7 +33,7 @@ export default function Nav() {
 
   return (
     <nav
-      className={`fixed z-50 w-full px-6 md:px-72 ${menuOpen ? "h-full" : "h-auto"} transition-all duration-300 ${
+      className={`fixed z-50 w-full  px-6 lg:px-52 ${menuOpen ? "h-full" : "h-auto"} transition-all duration-300 ${
         scroll || checkPath || menuOpen ? "bg-white shadow-md" : "bg-transparent"
       } h-fit`}
       style={{
@@ -94,22 +94,6 @@ export default function Nav() {
                 aria-current="page"
               >
                 Inicio
-              </a>
-            </li>
-            <li>
-              <a
-                href="/laudo-nr12"
-                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
-              >
-                NR12
-              </a>
-            </li>
-            <li>
-              <a
-                href="/laudo-nr13"
-                className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
-              >
-                NR13
               </a>
             </li>
             <li>

@@ -25,14 +25,15 @@ export default function page() {
             ARMAZENAMENTO
           </h2>
         </div>
-        <button
+        <a
+          href="/#falarconosco"
           className="bg-blue-500 hover:bg-blue-600 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
           style={{
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
         >
           Fale com nossa Equipe
-        </button>
+        </a>
       </div>
       <div className="px-5 lg:px-60 flex flex-col gap-5 lg:mb-40 mb-20 lg:py-32 py-20">
         <div className="flex flex-col gap-10 pb-8">

@@ -23,14 +23,15 @@ export default function Home() {
             Sua Parceira em Segurança e Saúde no Trabalho
           </h2>
           <div className="mt-16">
-            <button
+            <a
+              href="/#falarconosco"
               className="bg-azul-claro hover:bg-blue-500 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
               style={{
                 boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
               }}
             >
               Fale com nossa Equipe
-            </button>
+            </a>
           </div>
         </div>
       </div>

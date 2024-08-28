@@ -11,13 +11,14 @@ export default function CardServices({ title, text, image, page }: { title: stri
           "rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;",
       }}
     >
+
       <Image
         src={image}
         className="rounded-2xl"
         width={300}
         height={300}
-        alt="PPRA"
-      />
+        alt={title}
+        />
       <h4 className="text-2xl font-bold text-cinza-escuro text-center min-h-24 px-7">
         {title}
       </h4>
