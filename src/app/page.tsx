@@ -24,6 +24,7 @@ export default function Home() {
           </h2>
           <div className="mt-16">
             <a
+              title="Fale com nossa Equipe"
               href="/#falarconosco"
               className="bg-azul-claro hover:bg-blue-500 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
               style={{

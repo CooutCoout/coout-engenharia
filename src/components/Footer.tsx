@@ -31,25 +31,26 @@ export default function Footer() {
       <div className="flex flex-col lg:gap-2 font-bold lg:pl-20">
         <p className="text-2xl font-bold text-azul-claro">Navegação</p>
         <div className="flex flex-col gap-2">
-          <a href="/" className="text-base hover:text-azul-claro">
-            Home
+          <a title="Início" href="/" className="text-base hover:text-azul-claro">
+            Início
           </a>
-          <a href="/laudo-nr12" className="text-base hover:text-azul-claro">
+          <a title="NR-12" href="/laudo-nr12" className="text-base hover:text-azul-claro">
             NR-12
           </a>
-          <a href="/laudo-nr12" className="text-base hover:text-azul-claro">
+          <a title="NR-13" href="/laudo-nr12" className="text-base hover:text-azul-claro">
             NR-13
           </a>
-          <a href="#quemsomos" className="text-base hover:text-azul-claro">
+          <a title="Quem Somos" href="#quemsomos" className="text-base hover:text-azul-claro">
             Quem Somos
           </a>
           <a
+            title="Serviços"
             href="/#nossosservicos"
             className="text-base hover:text-azul-claro"
           >
             Serviços
           </a>
-          <a href="/#falarconosco" className="text-base hover:text-azul-claro">
+          <a title="Contato" href="/#falarconosco" className="text-base hover:text-azul-claro">
             Contato
           </a>
         </div>
@@ -81,21 +82,38 @@ export default function Footer() {
           Redes Sociais
         </p>
         <div className="flex gap-3 lg:self-start self-center">
-          <a  target="_blank" href="https://www.facebook.com/profile.php?id=100003314685225">
+          <a
+            title="Facebook"
+            target="_blank"
+            href="https://www.facebook.com/profile.php?id=100003314685225"
+          >
             <FaFacebookSquare color="#3b5998" size={30} />
           </a>
-          <a target="_blank" href="http://www.linkedin.com/in/engenheiro-dioni-couto">
+          <a
+            title="Linkedin"
+            target="_blank"
+            href="http://www.linkedin.com/in/engenheiro-dioni-couto"
+          >
             <FaLinkedin color="#0e76a8" size={30} />
           </a>
-          <a target="_blank" href="https://api.whatsapp.com/send/?phone=5511989057216">
+          <a
+            title="Whatsapp"
+            target="_blank"
+            href="https://api.whatsapp.com/send/?phone=5511989057216"
+          >
             <FaWhatsappSquare color="#25d366" size={30} />
           </a>
-          <a target="_blank" href="https://www.instagram.com/coout_engenharia?igsh=cmF4MHZyaXA0YXE2">
+          <a
+            title="Instagram"
+            target="_blank"
+            href="https://www.instagram.com/coout_engenharia?igsh=cmF4MHZyaXA0YXE2"
+          >
             <FaInstagramSquare color="#3f729b" size={30} />
           </a>
         </div>
       </div>
       <a
+        title="Whatsapp"
         target="_blank"
         href="https://api.whatsapp.com/send/?phone=5511989057216"
         className="z-50 fixed lg:bottom-10 bottom-5 lg:right-10 right-5"

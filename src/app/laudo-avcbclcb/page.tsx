@@ -25,6 +25,7 @@ export default function page() {
           </h2>
         </div>
         <a
+          title="Fale com nossa Equipe"
           href="/#falarconosco"
           className="bg-blue-500 hover:bg-blue-600 w-fit lg:px-20 py-4 px-10 lg:py-5 lg:text-3xl text-xl text-white rounded-2xl font-bold"
           style={{

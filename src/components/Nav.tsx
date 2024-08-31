@@ -89,6 +89,7 @@ export default function Nav() {
           >
             <li>
               <a
+                title="Início"
                 href="/"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
                 aria-current="page"
@@ -98,6 +99,7 @@ export default function Nav() {
             </li>
             <li>
               <a
+                title="Quem Somos"
                 href="/#quemsomos"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
               >
@@ -106,6 +108,7 @@ export default function Nav() {
             </li>
             <li>
               <a
+                title="Nossos Serviços"
                 href="/#nossosservicos"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
               >
@@ -114,6 +117,7 @@ export default function Nav() {
             </li>
             <li>
               <a
+                title="Falar Conosco"
                 href="/#falarconosco"
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
               >
