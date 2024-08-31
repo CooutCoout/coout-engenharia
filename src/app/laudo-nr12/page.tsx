@@ -37,19 +37,26 @@ export default function page() {
       <div className="px-5 lg:px-60 flex flex-col gap-5 lg:mb-40 mb-20 lg:py-32 py-20">
         <div className="flex flex-col gap-10 pb-8">
           <h2 className="lg:text-5xl text-3xl  pb-8 font-bold text-azul-claro">
-            Renove o Seu Laudo Compressor com Profissionalismo e Agilidade
+            Mantenha seus funcionários e equipamentos seguros e em conformidade
+            com a NR12!
           </h2>
-          <p className="text-cinza-medio-texto-sec  text-2xl">
-            O Laudo Compressor, também conhecido como Laudo NR13 ou Laudo de
-            Vaso de Pressão, é essencial para manter a conformidade com a NR13 e
-            evitar possíveis penalidades. Não permita que seu laudo expire!
-            Entre em contato conosco agora mesmo para solicitar uma proposta de
-            renovação. Nossa equipe altamente qualificada e nossos equipamentos
-            de última geração garantem uma entrega pontual e eficiente. Nosso
-            compromisso é assegurar que seu compressor ou vaso de pressão esteja
-            sempre em conformidade com as exigências da NR13. Ao escolher nossos
-            serviços, você obtém as seguintes vantagens:
-          </p>
+          <h3 className="lg:text-3xl text-2xl  pb-8 font-bold text-azul-claro">
+            Transforme a segurança em prioridade com nossos serviços
+            especializados
+          </h3>
+          <div className="flex flex-col gap-2">
+            <p className="text-cinza-medio-texto-sec  text-2xl">
+              Você sabia que a segurança e a conformidade com a NR12 são
+              fundamentais para a operação segura e eficiente de maquinas e
+              equipamentos?
+            </p>
+            <p className="text-cinza-medio-texto-sec  text-2xl">
+              Estamos aqui para garantir que seus equipamentos estejam sempre em
+              perfeitas condições e alinhados com as normas regulamentadoras,
+              proporcionando tranquilidade e proteção para sua equipe e
+              operação.
+            </p>
+          </div>
         </div>
         <div className="flex lg:flex-row flex-col gap-10">
           <div className="lg:w-1/2 flex flex-col gap-4">
@@ -59,6 +66,7 @@ export default function page() {
                 key={item.id}
                 question={item.title}
                 answer={item.text}
+                answer2={item.text2}
                 activeAccordion={activeAccordion}
                 toggleAccordion={toggleAccordion}
                 sigla={""}
@@ -68,12 +76,20 @@ export default function page() {
           <div className="lg:w-1/2">
             <Image
               className="rounded-2xl"
-              src={"/nr13.jpg"}
+              src={"/nr12.jpg"}
               width={600}
               height={600}
-              alt="3213"
+              alt="Laudo NR12"
             />
           </div>
+        </div>
+        <div>
+          <p className="lg:text-3xl text-2xl  pb-8 font-bold text-azul-claro">
+            Não deixe a segurança e a conformidade em segundo plano. Entre em
+            contato hoje mesmo para uma avaliação completa e descubra como
+            podemos ajudar a garantir um ambiente de trabalho seguro e
+            regulamentado.
+          </p>
         </div>
       </div>
       <Footer />

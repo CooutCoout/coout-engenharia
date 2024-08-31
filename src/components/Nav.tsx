@@ -93,7 +93,7 @@ export default function Nav() {
                 className="block py-2 px-3 md:hover:text-azul-claro md:p-0"
                 aria-current="page"
               >
-                Inicio
+                Início
               </a>
             </li>
             <li>

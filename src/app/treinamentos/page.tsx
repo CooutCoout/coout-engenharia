@@ -73,6 +73,8 @@ export default function page() {
             activeAccordion={activeAccordion}
             toggleAccordion={toggleAccordion}
             sigla={item.sigla}
+            image={item.image}
+            topicItems={item.topicItems}
           />
         ))}
       </div>

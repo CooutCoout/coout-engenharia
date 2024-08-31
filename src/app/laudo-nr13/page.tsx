@@ -38,18 +38,13 @@ export default function page() {
       <div className="px-5 lg:px-60 flex flex-col gap-5 lg:mb-40 mb-20 lg:py-32 py-20">
         <div className="flex flex-col gap-10 pb-8">
           <h2 className="lg:text-5xl text-3xl  pb-8 font-bold text-azul-claro">
-            Renove o Seu Laudo Compressor com Profissionalismo e Agilidade
+          Mantenha seus funcionários e equipamentos seguros e em conformidade com a NR13!
           </h2>
+          <h3 className="lg:text-3xl text-2xl  pb-8 font-bold text-azul-claro">
+          Transforme a segurança em prioridade com nossos serviços especializados
+          </h3>
           <p className="text-cinza-medio-texto-sec  text-2xl">
-            O Laudo Compressor, também conhecido como Laudo NR13 ou Laudo de
-            Vaso de Pressão, é essencial para manter a conformidade com a NR13 e
-            evitar possíveis penalidades. Não permita que seu laudo expire!
-            Entre em contato conosco agora mesmo para solicitar uma proposta de
-            renovação. Nossa equipe altamente qualificada e nossos equipamentos
-            de última geração garantem uma entrega pontual e eficiente. Nosso
-            compromisso é assegurar que seu compressor ou vaso de pressão esteja
-            sempre em conformidade com as exigências da NR13. Ao escolher nossos
-            serviços, você obtém as seguintes vantagens:
+          Você sabia que a segurança e a conformidade com a NR13 são fundamentais para a operação segura e eficiente de caldeiras e vasos de pressão? Estamos aqui para garantir que seus equipamentos estejam sempre em perfeitas condições e alinhados com as normas regulamentadoras, proporcionando tranquilidade e proteção para sua equipe e operação.
           </p>
         </div>
         <div className="flex lg:flex-row flex-col gap-10">
@@ -72,9 +67,12 @@ export default function page() {
               src={"/nr13.jpg"}
               width={600}
               height={600}
-              alt="3213"
+              alt="Laudo NR13"
             />
           </div>
+        </div>
+        <div>
+          <p className="lg:text-3xl text-2xl  pb-8 font-bold text-azul-claro">Entre em contato conosco para garantir que seus equipamentos estejam sempre em conformidade com a NR13 e seguros. Estamos prontos para oferecer suporte completo e especializado para atender a todas as suas necessidades de segurança e conformidade.</p>
         </div>
       </div>
       <Footer />
