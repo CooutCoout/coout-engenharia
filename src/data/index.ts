@@ -58,7 +58,7 @@ export const dadosServicos = [
     id: 6,
     title: "Equipamentos de Medição e Segurança",
     text: "Garantindo um Ambiente de Trabalho Seguro e Conformidade Total",
-    image: "/medicao.jpg",
+    image: "/equipamentos.jpg",
     page: "/laudo-equipamentos-medicao-seguranca",
   }
 ];
@@ -102,6 +102,7 @@ export const seguranDoTrabalhoAccordion = [
     answer:
       "Realizamos avaliações técnicas para identificar e classificar riscos de periculosidade, garantindo que todas as medidas de segurança sejam implementadas para proteger seus colaboradores.",
     sigla: "NR16",
+    image: "/nr16.jpg",
   },
   {
     id: 7,
