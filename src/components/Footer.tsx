@@ -73,8 +73,7 @@ export default function Footer() {
           <span>
             <FaLocationDot color="#38b6ff" size={20} />
           </span>
-          Rua Doutor Almenor Jardim Silveira Jardim Alvorada, Santo André/SP
-          CEP: 09180-070
+          Avenida Dom Pedro II, 1403 - Bairro Jardim - Santo André - SP - CEP 09080-110
         </p>
       </div>
       <div className="flex flex-col gap-2">
@@ -124,7 +123,7 @@ export default function Footer() {
           style={{
             boxShadow: "rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px",
           }}
-          size={50}
+          size={65}
         />
       </a>
     </footer>

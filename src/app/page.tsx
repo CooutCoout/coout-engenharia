@@ -11,10 +11,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="bg-white w-full">
-      <div className="min-h-[100vh] bg-black relative">
+      <div className="lg:min-h-[100vh] lg:max-h-[100vh] min-h-[80vh] :max-h-[80vh] bg-black relative">
         <div className="absolute inset-0 bg-[url('/banner.jpg')] bg-cover lg:bg-center opacity-10 h-full" />
         <Nav />
-        <div className="relative z-10 p-4 flex flex-col justify-center gap-2 px-5 lg:px-60 h-screen">
+        <div className="relative z-10 p-4 flex flex-col justify-center gap-2 px-5 lg:px-60 lg:h-screen lg:pt-0 pt-36">
           <h1 className="text-cinza-claro lg:text-6xl text-4xl font-bold ">
             Bem-vindo à{" "}
             <span className="text-azul-claro">COOUT Engenharia</span>
@@ -34,6 +34,22 @@ export default function Home() {
               Fale com nossa Equipe
             </a>
           </div>
+        </div>
+      </div>
+      <div className="lg:py-32 py-20 px-10 lg:px-60" id="nossosservicos">
+        <h3 className="lg:text-6xl text-4xl font-bold text-azul-claro">
+          NOSSOS SERVIÇOS
+        </h3>
+        <div className="pt-16 flex gap-10 lg:flex-row flex-wrap">
+          {dadosServicos.map((item) => (
+            <CardServices
+              key={item.id}
+              title={item.title}
+              text={item.text}
+              image={item.image}
+              page={item.page}
+            />
+          ))}
         </div>
       </div>
       <div
@@ -88,20 +104,23 @@ export default function Home() {
         <div className="relative z-20 flex flex-col gap-10 bg-black opacity-75 p-10 mx-10 lg:mx-72 rounded-2xl">
           <div className="flex flex-col gap-4">
             <div className="min-w-[250px] max-w-[250px] self-center">
-
-          <Image src="/Engenheiro.png" alt="Colaborador" width={250} height={250} />
+              <Image
+                src="/Engenheiro.png"
+                alt="Colaborador"
+                width={250}
+                height={250}
+              />
             </div>
-          <p className="text-white lg:text-2xl text-xl">
-            Na COOUT Engenharia, acreditamos que a excelência começa com um
-            compromisso inabalável com a segurança e a eficiência. Sob a
-            liderança do Eng. Dioni Couto, nossa equipe é sinônimo de inovação e
-            dedicação nas áreas de Engenharia de Segurança do Trabalho e
-            Engenharia Mecânica. Com uma carreira notável em empresas de renome
-            como Goodyear e Toyota, Dioni traz uma visão experiente e
-            respeitável para cada projeto, garantindo soluções de alto impacto e
-            eficácia.
-          </p>
-
+            <p className="text-white lg:text-2xl text-xl">
+              Na COOUT Engenharia, acreditamos que a excelência começa com um
+              compromisso inabalável com a segurança e a eficiência. Sob a
+              liderança do Eng. Dioni Couto, nossa equipe é sinônimo de inovação
+              e dedicação nas áreas de Engenharia de Segurança do Trabalho e
+              Engenharia Mecânica. Com uma carreira notável em empresas de
+              renome como Goodyear e Toyota, Dioni traz uma visão experiente e
+              respeitável para cada projeto, garantindo soluções de alto impacto
+              e eficácia.
+            </p>
           </div>
 
           <h3 className="lg:text-4xl text-xl font-bold uppercase text-verde-claro">
@@ -179,22 +198,6 @@ export default function Home() {
               parceira confiável na busca pela excelência.
             </p>
           </div>
-        </div>
-      </div>
-      <div className="lg:py-32 py-20 px-10 lg:px-60" id="nossosservicos">
-        <h3 className="lg:text-6xl text-4xl font-bold text-azul-claro">
-          NOSSOS SERVIÇOS
-        </h3>
-        <div className="pt-16 flex gap-10 lg:flex-row flex-wrap">
-          {dadosServicos.map((item) => (
-            <CardServices
-              key={item.id}
-              title={item.title}
-              text={item.text}
-              image={item.image}
-              page={item.page}
-            />
-          ))}
         </div>
       </div>
       <div
